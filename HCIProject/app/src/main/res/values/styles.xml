@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/textColor</item>
+        <item name="toolbarStyle">@style/Widget.GetAPet.Toolbar</item>
+        <item name="colorControlHighlight">@color/colorSecondary</item>
+    </style>
+
+    <style name="AppTheme.Immerse" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Widget.GetAPet.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="titleTextAppearance">@style/TextAppearance.ToolbarTitle</item>
+    </style>
+
+    <style name="TextAppearance.ToolbarTitle" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:letterSpacing">0.10</item>
+        <item name="android:fontFamily">@font/rubik_regular_family</item>
+    </style>
+
+    <style name="Widget.Shrine.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="rippleColor">@color/text_button_ripple</item>
+    </style>
+
+    <style name="Widget.Shrine.Button.MenuButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/backdrop_menu_button</item>
+        <item name="rippleColor">@color/text_button_ripple</item>
+        <item name="android:fontFamily">@font/rubik_medium_family</item>
+    </style>
+
+    <style name="IconButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:background">@drawable/icon_button_selector</item>
+    </style>
+
+    <style name="IconButton.Grid" parent="IconButton">
+        <item name="android:background">@drawable/icon_button_selector_grid</item>
+    </style>
+
+    <style name="Widget.Shrine.Backdrop" parent="">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxBackgroundColor">@color/lightPrimaryBackground</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="hintEnabled">true</item>
+        <item name="hintTextColor">@color/textColor</item>
+    </style>
+
+    <style name="TextInputEditText">
+        <item name="android:fontFamily">@font/rubik_regular_family</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="TextAppearanceHeadline5">
+        <item name="android:fontFamily">@font/rubik_medium_family</item>
+        <item name="android:textSize">@dimen/text_very_large</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="TextAppearanceHeadline4">
+        <item name="android:fontFamily">@font/rubik_regular_family</item>
+        <item name="android:textSize">@dimen/text_very_large</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="TextAppearanceHeadline6">
+        <item name="android:fontFamily">@font/rubik_medium_family</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="TextAppearanceOverline">
+        <item name="android:fontFamily">@font/rubik_regular_family</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textColor">@color/textColorBody</item>
+    </style>
+
+    <style name="TextAppearanceBody2">
+        <item name="android:fontFamily">@font/rubik_regular_family</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/textColorBody</item>
+    </style>
+
+    <style name="TextAppearanceButton">
+        <item name="android:fontFamily">@font/rubik_medium_family</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="CtaButton" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:textAppearance">@style/TextAppearanceButton</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingTop">@dimen/spacing_medium</item>
+        <item name="android:paddingBottom">@dimen/spacing_medium</item>
+        <item name="cornerRadius">@dimen/radius_large</item>
+        <item name="iconPadding">@dimen/spacing_medium</item>
+        <item name="iconTint">@color/iconColor</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+</resources>

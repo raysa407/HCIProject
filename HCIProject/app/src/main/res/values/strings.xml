@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GetAPet</string>
+
+    <!-- backdrop menu labels -->
+    <string name="category_cats">Cats</string>
+    <string name="category_dogs">Dogs</string>
+    <string name="category_birds">Birds</string>
+    <string name="category_reptiles">Reptiles</string>
+    <string name="category_insects">Insects</string>
+    <string name="category_fishes">Fishes</string>
+    <string name="category_others">Others</string>
+    <string name="account">My Account</string>
+    <string name="app_icon_description">The app icon in the top bar is a dog\'s face silhouette.</string>
+    <string name="add_pet_button_description">Button to publish a new pet for adoption</string>
+    <string name="filter_button_description">Button to filter pets by species or breed</string>
+    <string name="detail_image_description">Header image showing the pet</string>
+    <string name="avatar_description">User avatar</string>
+    <string name="characteristics_title">Characteristics</string>
+    <string name="talk_to_owner_cta">Talk to owner</string>
+    <string name="mock_description">Doggie is a white coloured shepherd dog. Doggie is special to me because it is just like my best friend. everytime when I come back from school, it will run out quickly to welcome me.</string>
+    <string name="pet_name">Pet name</string>
+    <string name ="adopt_now" > ADOPT NOW </string>
+    <string name="description_placeholder">Detailed description about your pet</string>
+
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearanceHeadline5"
+        app:title="Publish your pet" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/details_motion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-9dp"
+        android:layout_marginBottom="9dp"
+        android:background="@color/background"
+        android:gravity="clip_horizontal|center|top">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="56dp"
+            android:scaleType="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars[3]" />
+
+        <TextView
+            android:id="@+id/nameTitle"
+            android:layout_width="106dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="28dp"
+            android:text="Pet Name"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.304"
+            app:layout_constraintStart_toEndOf="@+id/nameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="150dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="97dp"
+            app:layout_constraintBottom_toTopOf="@+id/petDescription"
+            app:layout_constraintEnd_toStartOf="@+id/genderSpinner"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="@+id/nameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/nameTitle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="150dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="105dp"
+            app:layout_constraintBottom_toTopOf="@+id/describePet"
+            app:layout_constraintEnd_toStartOf="@+id/ageSpinner"
+            app:layout_constraintStart_toEndOf="@+id/typeSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/editName"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Spinner
+            android:id="@+id/ageSpinner"
+            android:layout_width="150dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="104dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toTopOf="@+id/describePet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editName"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/petDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="311dp"
+            android:layout_marginBottom="68dp"
+            android:text="Describe your pet!"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.31"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTitle"
+            app:layout_constraintVertical_bias="0.57" />
+
+        <EditText
+            android:id="@+id/describePet"
+            android:layout_width="370dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="131dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="175dp"
+            android:ems="10"
+            android:hint="tell us your pet's story!"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petDescription"
+            app:layout_constraintVertical_bias="0.42000002" />
+
+        <Button
+            android:id="@+id/img_pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose an image!"
+            app:layout_constraintBottom_toTopOf="@+id/editName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.508" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

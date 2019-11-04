@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/backdropMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/backdrop_top_padding"
+    >
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_cats"
+        tools:alpha="1"
+        android:alpha="0"/>
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:alpha="1"
+        android:text="@string/category_dogs"
+        android:alpha="0"/>
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:alpha="1"
+        android:text="@string/category_others"
+        android:alpha="0"/>
+
+    <Button
+        android:id="@+id/myAccountButton"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/mtrl_dark_on_primary_emphasis_high_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:alpha="1"
+        android:text="@string/account"
+        android:alpha="0"/>
+</LinearLayout>
